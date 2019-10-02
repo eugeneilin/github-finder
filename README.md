@@ -1,5 +1,5 @@
 ## [Github Finder](http://githubfinder.eugeneilin.dev)
 
-Active on Github? Type in your name in the search bar!
+Active on Github? Type in your username in the search bar!
 
-This dynamic web app, built with the latest React, features well-built and arranged components, with integrated props and state. But the highlight of this project is React Hooks and Context API. Deployed with Netlify.
+This dynamic web app, built with the latest React, features well-built and arranged components, with props and state. The highlight of this project is React Hooks and Context API. Deployed with Netlify.
