@@ -28,7 +28,7 @@ const User = ({ match }) => {
     following,
     public_repos,
     public_gists,
-    hireable
+    hireable,
   } = user;
 
   if (loading) return <Spinner />;
@@ -46,12 +46,7 @@ const User = ({ match }) => {
       )}
       <div className='card grid-2'>
         <div className='all-center'>
-          <img
-            src={avatar_url}
-            className='round-img'
-            alt=''
-            style={{ width: '150px' }}
-          />
+          <img src={avatar_url} className='round-img' alt='' style={{ width: '150px' }} />
           <h1>{name}</h1>
           <p>Location: {location}</p>
         </div>
