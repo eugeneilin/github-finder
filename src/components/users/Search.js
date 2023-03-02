@@ -6,9 +6,12 @@ const Search = () => {
   const githubContext = useContext(GithubContext);
   const alertContext = useContext(AlertContext);
 
-  const [text, setText] = useState('');
+  // const [btnClick, setBtnClick] = useState(false);
 
-  const onSubmit = e => {
+  const [text, setText] = useState('');
+  // console.log(text);
+
+  const onSubmit = (e) => {
     e.preventDefault();
     if (text === '') {
       alertContext.setAlert('Please enter something', 'light');
@@ -18,7 +21,11 @@ const Search = () => {
     }
   };
 
-  const onChange = e => setText(e.target.value);
+  const onChange = (e) => setText(e.target.value);
+
+  // const handleBtn = () => {
+  //   setBtnClick((prev) => !prev);
+  // };
 
   return (
     <div>
@@ -30,17 +37,10 @@ const Search = () => {
           value={text}
           onChange={onChange}
         />
-        <input
-          type='submit'
-          value='Search'
-          className='btn btn-dark btn-block'
-        />
+        <input type='submit' value='Search' className='btn btn-dark btn-block' />
       </form>
       {githubContext.users.length > 0 && (
-        <button
-          className='btn btn-light btn-block'
-          onClick={githubContext.clearUsers}
-        >
+        <button className='btn btn-light btn-block' onClick={githubContext.clearUsers}>
           Clear
         </button>
       )}
