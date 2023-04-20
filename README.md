@@ -1,4 +1,4 @@
-## [Github Finder](http://githubfinder.eugeneilin.dev)
+## [Github Finder](https://gittheusers.eugeneilin.dev/)
 
 Active on Github? Type in your username in the search bar!
 
